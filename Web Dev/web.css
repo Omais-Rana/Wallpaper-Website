@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-color: rgb(253, 219, 28) rgb(18, 16, 16);
+}
+.grid {
+  display: grid;
+  grid-template-areas:
+    "logo logo logo navbar navbar navbar"
+    "subm subm subm subm subm subm"
+    "subm2 subm2 subm2 subm2 subm2 subm2"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+  grid-gap: 0px;
+}
+
+#logo {
+  grid-area: logo;
+  background-image: url(head1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0vw 0vw;
+  padding-top: 1vw;
+  padding-left: 5.333vw;
+}
+
+#logo a{
+  text-decoration: none;
+  list-style: none;
+  font-family: Fredoka One;
+  color: whitesmoke;
+  font-size: 2vw;
+ 
+}
+
+#navbar {
+  grid-area: navbar;
+  background-image: url(head2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0vw -1.7vw;
+  padding-left: 33.333vw;
+  margin-bottom: -1.667vw;
+}
+
+#navbar ul {
+  padding-top: 1.333vw;
+}
+
+#navbar ul li {
+  list-style: none;
+  display: inline-block;
+ height: 4.667vw;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  display: block;
+  padding-left: 1.333vw;
+  color: whitesmoke;
+  font-size: 1.333vw;
+  font-family: raleway;
+  font-weight: 800;
+}
+
+#navbar ul li a:hover {
+  color: gold;
+}
+
+#navbar ul ul {
+  visibility: hidden;
+  position: absolute;
+  margin-top: -1.7vw;
+  margin-left: 1vw;
+  top: 3.333vw;
+}
+
+#navbar ul li:hover > ul {
+  top: 4.200vw;
+  visibility: visible;
+  transition: 0.4s linear;
+}
+
+#navbar ul ul li {
+  display: list-item;
+  position: relative;
+  border: 0.133vw solid rgb(255, 255, 255, 0.8);
+  border-radius: 0.133vw;
+  height: 2.800vw;
+  padding-left: 0.867vw;
+  padding-top: 1vw;
+  margin-top: 0.467vw;
+  background-color: rgb(18, 16, 16, 0.6);
+}
+
+#navbar ul ul li:hover{
+background-color: rgb(253, 219, 28);
+border-color: rgb(253, 219, 28);
+transition: .2s linear;
+}
+
+#navbar ul ul li a {
+  line-height: 0.667vw;
+  padding-left: 0vw;
+  padding-right: 0vw;
+  color: rgb(255, 255, 255, 0.8);
+}
+
+#navbar ul ul li a:hover{
+  color: rgb(18, 16, 16)
+}
+
+#subm {
+  grid-area: subm;
+  width: 100%;
+  height: 53vw;
+  background-image: url(wallhaven-vqg28m1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0vw -8vw;
+  overflow: hidden;
+}
+
+#subm h1{
+  position: relative;
+  right: 33.333vw;
+  color: whitesmoke;
+  font-family: social trend demo outline;
+  font-size: 8vw;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 3vw;
+ width: 100%;
+}
+
+.subm2{
+  grid-area: subm2;
+}
+
+.subm2 .devices{
+  display: flex;
+  justify-content: center;
+  background-color: gold;
+  box-shadow: 0vw 0.333vw 0.333vw lightgray;
+  margin-top: 10.2vw;
+  margin-bottom: 11vw;
+}
+
+.subm2 .devices .words{
+  position: absolute;
+  margin-top: 2.9vw;
+  font-size: 2.4vw;
+  font-family: raleway;
+  letter-spacing: 0.133vw;
+  word-spacing: 0.3vw;
+  font-weight: 600;
+  color: rgb(18, 16, 16);
+}
+
+#main {
+  grid-area: main;
+  margin-top: 1.3vw;
+}
+
+#main h2{
+  text-align: center;
+  font-size: 2.667vw;
+  font-family: raleway;
+  font-weight: 500;
+  color: rgb(18, 16, 16);
+}
+
+#main h2 i{
+  font-size: 2.3vw;
+}
+
+#main .btn{
+  display: grid;
+ background-color: rgb(18, 16, 16);
+ border: 0.133vw solid rgb(18, 16, 16);
+ border-radius: 0.200vw;
+ box-shadow: 0.267vw 0.267vw 0.267vw lightgray;
+ margin: auto;
+ margin-bottom: 1.333vw;
+ padding: 0.5vw;
+ cursor: pointer;
+  font-family: Raleway;
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: whitesmoke;
+}
+
+#main .btn:hover {
+  color: rgb(27, 24, 24);
+  background-color: rgb(253, 219, 28);
+  border-color: rgb(253, 219, 28);
+  transition: .2s linear;
+}
+
+#main .scrl{
+ display: grid;
+ position: static;
+ background-color: rgb(18, 16, 16, 0.7);
+ border: 0.133vw;
+ border-radius: 50%;
+ margin: auto;
+ margin-bottom: 1.333vw;
+ padding: 0.8vw;
+ cursor: pointer;
+ font-family: Raleway;
+ font-size: 1.1vw;
+ font-weight: 500;
+  color: whitesmoke;
+}
+
+#main .scrl:hover{
+  color: rgb(27, 24, 24);
+  background-color: rgb(253, 219, 28, 0.7);
+  transition: .2s linear;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  row-gap: 20px;
+  column-gap: 12px;
+  margin-top: 1.667vw;
+ margin-left: 2vw;
+ margin-right: 2vw;
+ margin-bottom: 2vw;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  /* filter: drop-shadow(2px 4px 6px black); */
+  border-radius: 4px;
+  object-fit: cover;
+  position: relative;
+  box-shadow: 3px 3px 5px rgba(0,0,0,.5);
+}
+
+@media only screen and (max-width: 1000px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.gallery img:hover {
+  z-index: 9;
+  transform: scale(1.1); 
+  filter: brightness(1.25);
+  transition: all 0.7s ease;
+  cursor: pointer;
+}
+
+.gallery .hidden{
+  display: none;
+}
+  
+#footer {
+  grid-area: footer;
+  background-color: gold;
+  color: rgb(18, 16, 16);
+}
+  
+section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+
+.icon-list {
+  width: 100%;
+  max-width: 53.333vw;
+  display: flex;
+  justify-content: center;
+}
+
+#icon-item {
+  list-style: none;
+
+}
+
+#icon-item li a {  
+  display: inline-flex;
+  font-size: 1.600vw;  
+  text-decoration: none;  
+  width: 4.267vw;
+  height: 4.267vw;   
+  transition: .5s linear;
+  position: relative;
+  margin: auto;
+  margin-top: 0.213vw;
+  color: rgb(18, 16, 16);
+}
+
+#icon-item li a:hover {
+  color: #fff;
+
+}
+
+.icon-list .fb:hover {
+  background: #1877F2;
+}
+
+.icon-list .insta:hover {
+  background: #E4405F;
+}
+
+.icon-list .pint:hover {
+  background: rgb(253, 13, 13);
+}
+
+#icon-item li a i {
+  margin: auto;    
+}
+
+#footer h5{
+  font-family: raleway;
+  font-size: 1vw;
+  text-align: center;
+  padding: 0.6vw;
+  line-height: 1.667vw;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
